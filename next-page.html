@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 flex items-center justify-center min-h-screen transition-colors duration-300">
+    <div class="container bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+        <h1 class="text-2xl sm:text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">Welcome to Next Page</h1>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">This is a new page in your grok-app website!</p>
+        
+        <!-- Card with Beautiful Border -->
+        <div class="card w-96 bg-base-100 dark:bg-gray-700 shadow-xl mb-6 border-4 border-indigo-500 dark:border-indigo-400 rounded-2xl">
+            <div class="card-body">
+                <h2 class="card-title text-gray-800 dark:text-gray-200">About grok-app</h2>
+                <p class="text-gray-600 dark:text-gray-300">This app helps you count with style! Built with Tailwind and DaisyUI for a modern look.</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-soft text-gray-800 dark:text-gray-200 mt-4" onclick="document.getElementById('my_modal_1').showModal()">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box bg-white dark:bg-gray-800">
+                <h3 class="font-bold text-lg text-gray-800 dark:text-gray-200">More Info</h3>
+                <p class="py-4 text-gray-600 dark:text-gray-300">This is a modal popup! You can add forms, alerts, or detailed content here.</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <button class="btn btn-neutral text-white">Close</button>
+                    </form>
+                </div>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+            </form>
+        </dialog>
+
+        <a href="index.html" class="text-blue-500 dark:text-blue-400 hover:underline">Back to Home</a>
+    </div>
+</body>
+</html>
